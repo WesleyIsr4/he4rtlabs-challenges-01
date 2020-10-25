@@ -5,11 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora de Freela - He4rtDevs</title>
     <link rel="stylesheet" href="./main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div>
-      <h1>Olá mundo.</h1>
+    <div class="page-index">
+      <div class="container">
+        <header>
+          <h1>Calculo de Horas</h1>
+
+          <div class="heartdev">
+            <a target="_blank" href="https://heartdevs.com/"
+              ><h2>He4rtDevs</h2></a
+            >
+          </div>
+        </header>
+      </div>
+      <main>
+        <form action="">
+          <fieldset>
+            <div class="input-block">
+              <label for="valueProject">Valor do Projeto</label>
+              <input type="text" name="valueProject" required />
+            </div>
+
+            <div class="input-block">
+              <label for="hoursPerDay"
+                >Quantidade de horas trabalhadas por dia</label
+              >
+              <input type="text" name="hoursPerDay" required />
+            </div>
+
+            <div class="input-block">
+              <label for="DaysWeek">Dias efetivos trabalhados na semana</label>
+              <input type="text" name="DaysWeek" required />
+            </div>
+
+            <div class="input-block">
+              <label for="DayHoliday">Dias de férias pelo projeto</label>
+              <input type="text" name="DayHoliday" required />
+            </div>
+          </fieldset>
+        </form>
+      </main>
     </div>
+
     <script src="./main.js"></script>
   </body>
 </html>

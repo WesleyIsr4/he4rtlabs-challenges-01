@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Colors 
+ #8743cc
+#0e141a 
+#ba55cf
+#9146d0
+*/
+
+/* Corpo do HTML */
+
+.page-index {
+  text-align: center;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1.5rem;
+
+  color: #fff;
+  background-color: #0e141a;
+}
+
+header .heartdev {
+  height: 2.5rem;
+  width: 12.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #8743cc;
+
+  border-radius: 0.3rem;
+}
+
+header .heartdev a {
+  text-decoration: none;
+  color: #fff;
+}
+
+:root {
+  font-size: 64.5;
+}
+
+body,
+input,
+button {
+  font: 400 1.2rem/1 "Nunito", sans-serif;
+}
+
+/* Form */
+
+form {
+  width: 35rem;
+  margin: 3.4rem auto;
+
+  overflow: hidden;
+  padding: 3rem 8rem 3rem 8rem;
+}
+
+fieldset {
+  border: none;
+}
+
+.input-block input {
+  height: 2.4rem;
+  border-radius: 0.3rem;
+  padding: 0 1.6rem;
+}
+
+.input-block + .input-block {
+  margin-top: 1.4rem;
+}
+
+.input-block label {
+  color: black;
+  margin-bottom: 0.8rem;
+  line-height: 1.2;
+}
