@@ -11,44 +11,58 @@
     />
   </head>
   <body>
-    <div class="page-index">
-      <div class="container">
-        <header>
-          <h1>Calculo de Horas</h1>
+    
+      <header>
+        <h1>Calculadora para Freelancer</h1>
 
-          <div class="heartdev">
-            <a target="_blank" href="https://heartdevs.com/"
-              ><h2>He4rtDevs</h2></a
-            >
-          </div>
-        </header>
-      </div>
+        <div class="heartdev">
+          <a target="_blank" href="https://heartdevs.com/"
+            ><h2>He4rtDevs</h2></a
+          >
+        </div>
+      </header>
+
       <main>
-        <form action="">
-          <fieldset>
-            <div class="input-block">
-              <label for="valueProject">Valor do Projeto</label>
-              <input type="text" name="valueProject" required />
-            </div>
+        <div class="container">
+          <div class="details-project">
 
-            <div class="input-block">
-              <label for="hoursPerDay"
-                >Quantidade de horas trabalhadas por dia</label
-              >
-              <input type="text" name="hoursPerDay" required />
-            </div>
+            <h2>Uma ferramenta simples para que você saiba quanto cobrar como freelancer.</h2>
+          </div>
+          <div class="form-details">
+           
+            <fieldset>
+              <div class="input-block">
+                <label for="valueProject">Valor do Projeto</label>
+                <input id="valueProject" type="number" name="valueProject" required />
+              </div>
 
-            <div class="input-block">
-              <label for="DaysWeek">Dias efetivos trabalhados na semana</label>
-              <input type="text" name="DaysWeek" required />
-            </div>
+              <div class="input-block">
+                <label for="hoursPerDay"
+                  >Quantidade de horas trabalhadas por dia</label
+                >
+                <input id="hoursPerDay" type="number" name="hoursPerDay" required />
+              </div>
 
-            <div class="input-block">
-              <label for="DayHoliday">Dias de férias pelo projeto</label>
-              <input type="text" name="DayHoliday" required />
-            </div>
-          </fieldset>
-        </form>
+              <div class="input-block">
+                <label for="daysWeek"
+                  >Dias efetivos trabalhados na semana</label
+                >
+                <input id="daysWeek" type="number" name="DaysWeek" required />
+              </div>
+
+              <div class="input-block">
+                <label for="dayHoliday">Dias de férias pelo projeto</label>
+                <input id="dayHoliday" type="number" name="DayHoliday" required />
+              </div>
+
+              <button id="calcular" class="btn-calculate">Calcular</button>
+
+              <h3 id="result-freelar"></h3>
+
+            </fieldset>
+          </div>
+          
+        </div>
       </main>
     </div>
 

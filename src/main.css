@@ -3,13 +3,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+:root {
+  font-size: 64.5;
+}
 
+body,
+input,
+button {
+  font: 400 1.2rem/1 "Nunito", sans-serif;
+}
 /* Colors 
  #8743cc
 #0e141a 
 #ba55cf
 #9146d0
 */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input-block[type="number"] {
+  -moz-appearance: textfield;
+}
 
 /* Corpo do HTML */
 
@@ -20,19 +39,27 @@
 
 header {
   width: 100%;
+
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
-  padding: 1.5rem;
+  padding: 0 50px 0 50px;
+
+  height: 4.5vw;
 
   color: #fff;
   background-color: #0e141a;
 }
 
+header h1 {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
 header .heartdev {
   height: 2.5rem;
-  width: 12.5rem;
+  width: 10.5rem;
 
   display: flex;
   justify-content: center;
@@ -46,36 +73,44 @@ header .heartdev {
 header .heartdev a {
   text-decoration: none;
   color: #fff;
+  font-size: 1rem;
 }
 
-:root {
-  font-size: 64.5;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-body,
-input,
-button {
-  font: 400 1.2rem/1 "Nunito", sans-serif;
+.container .details-project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 40px;
 }
 
 /* Form */
 
-form {
+fieldset {
+  text-align: center;
+
   width: 35rem;
   margin: 3.4rem auto;
 
   overflow: hidden;
   padding: 3rem 8rem 3rem 8rem;
-}
 
-fieldset {
   border: none;
 }
 
 .input-block input {
   height: 2.4rem;
-  border-radius: 0.3rem;
+
   padding: 0 1.6rem;
+
+  border: none;
+
+  border-bottom: 2px solid #8743cc;
 }
 
 .input-block + .input-block {
@@ -86,4 +121,14 @@ fieldset {
   color: black;
   margin-bottom: 0.8rem;
   line-height: 1.2;
+}
+
+.btn-calculate {
+  margin: 10px;
+
+  height: 40px;
+  width: 120px;
+
+  border: none;
+  border-radius: 8px;
 }
