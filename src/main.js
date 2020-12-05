@@ -1,5 +1,5 @@
 function clear(element) {
-  clear.innerHTML = "";
+  element.innerHTML = "";
 }
 
 document.getElementById("calcular").addEventListener("click", calcule);

@@ -132,3 +132,8 @@ fieldset {
   border: none;
   border-radius: 8px;
 }
+
+#result-freelar {
+  font-size: 20px;
+  font-weight: bold;
+}
